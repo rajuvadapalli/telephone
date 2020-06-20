@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to PhoneNumber App
+  </h1>
+  
+  Please enter 7 or 10 digit phone PhoneNumber
+
+  <input type="text" name="phnum" #myInput value="234"/>
+  <input type="submit" (click)="handleSubmit()"/>
+  <table class="table table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>PhoneNumber</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ph of phonenums">
+            <td>{{ph.phonenum}}</td>
+            
+        </tr>
+    </tbody>
+</table>
+
+</div>
+
+
